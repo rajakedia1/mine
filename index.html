@@ -1,0 +1,148 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset=utf-8>
+<title>Raja Kedia</title>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link rel=stylesheet href=css/layout1.css type=text/css>
+<link rel=stylesheet href=style/styler.css type=text/css>
+<link rel=stylesheet href=css/slider.css type=text/css>
+<link rel=icon type=image/png href=img/logo.png>
+<link rel=stylesheet href=http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css>
+
+
+    
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script type=text/javascript src=js/jquery.cycle.all.js></script>
+<script type=text/javascript src=js/slider.js></script>
+<script>$(document).ready(function(){$("a").on("click",function(d){if(this.hash!==""){d.preventDefault();var c=this.hash;$("html, body").animate({scrollTop:$(c).offset().top},900,function(){})}})});$(document).ready(function(){$("#flip").click(function(){$("#loginbox").slideToggle("fast")})});$(document).ready(function(){$("#flip2").click(function(){$("#loginbox").fadeToggle("fast")})});function chooseusername(){var e=document.getElementById("mine").value;var a=document.getElementById("email").value;var c=document.getElementById("sub").value;var d=document.getElementById("msg").value;if(d!=""){var b=new XMLHttpRequest();b.onreadystatechange=function(){if(b.readyState==4&&b.status==200){document.getElementById("state").innerHTML="Mail sent!"}};document.getElementById("state").innerHTML="Sending..";b.open("POST","sendmail.php?ch=1",true);b.setRequestHeader("Content-type","application/x-www-form-urlencoded");b.send("mine="+e+"&email="+a+"&subject="+c+"&msg="+d)}};
+
+</script>
+    
+
+    
+</head>
+<body>
+    
+    <div style="position:fixed;z-index:1000;right:30px;bottom:30px;">
+        <div ><a href="#home" style="width:50px;height:50px;display:block;background-color:#38a4cc;color:white;text-align:center;line-height:40px;font-size:24px;font-weight:600;border-radius:20px;opacity:0.8;cursor:pointer;text-decoration:none;">&uarr;</a></div>
+    </div>
+    <div class="wrapper">
+        <div class="left">
+            <div class="title">
+                <img src="img3/1234.jpg">
+                <h2>Raja Kedia</h2>
+                <h3>Software Developer, CG Artist and Musician</h3>
+            </div>
+            <div class="bar">
+                <ul>
+                    <li><a href="#tech">Technical Skills</a></li>
+                    <li><a href="#proj">Projects</a></li>
+                    <li><a href="#dev">Development</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="right">
+            <section>
+                <div class="main" id="home">
+                    <h1>Hello World!</h1>
+                    <p>I am Raja Kedia. I am an undergraduate student. I am a web designer and CG Artist with a good hand in various software.</p>
+                    <button class="button1">Send Mail</button>
+                
+                </div>
+                <div class="skill" id="tech">
+                    <div class=skillset>
+                        <b>Techinal Skills</b>
+                        <ul>
+                        <li><b>Languages: </b> C++, C, Python, Java, Haskell, Scala</li>
+                        <li><b>Web Languages: </b> HTML5, CSS3, Sass, JavaScript, Ajax, PHP</li>
+                        <li><b>Python Modules: </b> NumPy, SciPy, Scikit-learn, Tensorflow</li>
+                        <li><b>Database: </b> MySQl, MongoDB, NoSQL</li>
+                        <li><b>Graphics: </b> Blender, Sculptris, GIMP2, Inkscape</li>
+                        <li><b>Framework: </b> JQuery, Node.js, CodeIgniter, Flask, AngularJS, ReactJS</li>
+                        <li><b>Mobile App: </b> Android Studio, Ionic Framework</li>
+                        <li><b>Other Web Tools: </b> Grunt, Git, Github, Mercurial, Jekyll</li>
+                        <li><b>Software: </b> Dreamweaver, Photoshop, Illustrator, SBT</li>
+                        <li><b>Simulation Software: </b> MATLAB and Simulink, PSpice</li>
+                        <li><b>Microcontrollers: </b> 8085, 8086, 8255, ARM, Raspberry PI,Arduino, Beagle Bone</li>
+                        <li><b>OS: </b> Windows, Linux, Ubuntu</li>
+                        </ul>
+                        </div>
+                </div>
+                <div class="proj" id="proj">
+                <div class=pro>
+                    <h1>Major Projects Undertaken</h1>
+                    <hr><br>
+                    <p><b style=font-size:20px;padding-bottom:0px;display:block>Route Optimization algorithms for Electric vehicles</b><br>
+                    <b>Project guide:</b> <i>Prof. B. Krishna Naick, Dept. of Electrical Engg, IIT(ISM) Dhanbad<br></i>
+                    <b>Route Optimization (RO)</b> is an important feature of <b>Electric Vehicles (EVs)</b> navigation System. The Solution aims to minimize the length of the path and meet constraints on travelling time, time delay due to traffic signals, recharging time and recharging cost. The problem is based on the <b>Travelling Salesman Problem (TSP)</b> with different constraints. A Java code is implemented to solve the TSP with single Salesman using Greedy Algorithm with different Possibilities to increase efficiency of the code.
+                    </p>
+                    <hr>
+                    <p><b style=font-size:20px;padding-bottom:0px;display:block>Variable Amplitude and Variable Frequency control Voltage Source </b><br>
+                    <b>Project guide:</b> <i>Prof. Prof Arijit Baral, Dept. of Electrical Engg, IIT(ISM) Dhanbad<br></i>
+                    The motive of the project is to get an output voltage whose amplitude decreases when frequency is increased.
+                    </p>
+                </div>
+                </div>
+                <div class="devl" id="dev">
+                <div class="dev">
+                    <div class="title">
+                        <div class="l1"><img src="img3/tech.jpg"></div>
+                        <div class="r1"><b>PartIt</b><p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p></div>
+                        
+                    
+                    </div>
+                    <div class="title">
+                        
+                        <div class="r1" style="text-align:right;padding-left:0;padding-right:10px;"><b>PartIt</b><p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p></div>
+                        <div class="l1"><img src="img3/tech.jpg"></div>
+                    
+                    </div>
+                    <div class="title">
+                        <div class="l1"><img src="img3/tech.jpg"></div>
+                        <div class="r1"><b>PartIt</b><p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p></div>
+                        
+                    
+                    </div>
+                </div>
+                
+                </div>
+            </section>
+        </div>
+    
+    <script src=js/jquery.js></script>
+    <script src=js/fun.js></script>
+    </div>
+    
+</body>
+</html>
