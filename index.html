@@ -9,6 +9,7 @@
 <link rel=stylesheet href=style/styler.css type=text/css>
 <link rel=stylesheet href=css/slider.css type=text/css>
 <link rel=icon type=image/png href=img/logo.png>
+    <!--
 <link rel=stylesheet href=http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css>
 
 
@@ -16,6 +17,8 @@
 
     
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+-->
+    <script src=js/jquery.js></script>
 <script type=text/javascript src=js/jquery.cycle.all.js></script>
 <script type=text/javascript src=js/slider.js></script>
 <script>$(document).ready(function(){$("a").on("click",function(d){if(this.hash!==""){d.preventDefault();var c=this.hash;$("html, body").animate({scrollTop:$(c).offset().top},900,function(){})}})});$(document).ready(function(){$("#flip").click(function(){$("#loginbox").slideToggle("fast")})});$(document).ready(function(){$("#flip2").click(function(){$("#loginbox").fadeToggle("fast")})});function chooseusername(){var e=document.getElementById("mine").value;var a=document.getElementById("email").value;var c=document.getElementById("sub").value;var d=document.getElementById("msg").value;if(d!=""){var b=new XMLHttpRequest();b.onreadystatechange=function(){if(b.readyState==4&&b.status==200){document.getElementById("state").innerHTML="Mail sent!"}};document.getElementById("state").innerHTML="Sending..";b.open("POST","sendmail.php?ch=1",true);b.setRequestHeader("Content-type","application/x-www-form-urlencoded");b.send("mine="+e+"&email="+a+"&subject="+c+"&msg="+d)}};
@@ -41,7 +44,7 @@
                 <ul>
                     <li><a href="#tech">Technical Skills</a></li>
                     <li><a href="#proj">Projects</a></li>
-                    <li><a href="#dev">Development</a></li>
+                    <li><a href="#devx">Development</a></li>
                     <li><a href="#manage">Management Skills</a></li>
                 </ul>
             </div>
@@ -88,7 +91,7 @@
                     </p>
                 </div>
                 </div>
-                <div class="devl" id="dev">
+                <div class="devl" id="devx">
                 <div class="dev">
                     <div class="title">
                         <div class="l1"><img src="img3/tech.jpg"></div>
@@ -148,6 +151,21 @@
                         amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
                         odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p></div>
                         <div class="l1"><img src="img3/tech.jpg"></div>
+                    
+                    </div>
+                    <div class="title">
+                        <div class="l1"><img src="img3/tech.jpg"></div>
+                        <div class="r1"><b>PartIt</b><p>Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                        ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                        amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                        odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p></div>
+                        
                     
                     </div>
                 </div>

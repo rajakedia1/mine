@@ -13,12 +13,12 @@ $('.right .main').css({
 });
 $('.right .devl').css({
             
-    'height' : $(window).height(),
+    'min-height' : $(window).height(),
     
 });
 $('.right .proj').css({
             
-    'height' : $(window).height(),
+    'min-height' : $(window).height(),
     
 });
 $('.right .main h1').css({
