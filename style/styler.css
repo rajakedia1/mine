@@ -150,6 +150,12 @@ body {
   .right .devl .dev {
     width: 80%;
     margin: 0 10%; }
+    .right .devl .dev h1 {
+      color: #888;
+      text-align: left;
+      font-size: 26px;
+      display: block;
+      padding-bottom: 0px; }
     .right .devl .dev .title {
       width: 100%;
       display: block;
