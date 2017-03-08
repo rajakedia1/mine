@@ -143,6 +143,28 @@ body {
       margin: 0;
       padding: 0 0 30px 0; }
 
+.right .man {
+  width: 100%;
+  margin: 0 auto;
+  float: left;
+  display: block; }
+  .right .man .pro {
+    width: 80%;
+    margin: 0 10%; }
+    .right .man .pro h1 {
+      color: #888;
+      text-align: left;
+      font-size: 28px;
+      display: block;
+      padding-bottom: 0px; }
+    .right .man .pro b {
+      color: #333;
+      opacity: 0.8; }
+    .right .man .pro p {
+      color: #999;
+      margin: 0;
+      padding: 0 0 30px 0; }
+
 .right .devl {
   float: left;
   width: 100%;
