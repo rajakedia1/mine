@@ -21,9 +21,20 @@ $('.right .proj').css({
     'min-height' : $(window).height(),
     
 });
+$('.right .man').css({
+            
+    'min-height' : $(window).height(),
+    
+});
 $('.right .main h1').css({
             
     'padding-top' : ($(window).height()/2) - 130
+    
+});
+
+$('.right .man .man1 h1').css({
+            
+    'padding-top' : 30
     
 });
 

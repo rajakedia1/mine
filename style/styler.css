@@ -148,19 +148,19 @@ body {
   margin: 0 auto;
   float: left;
   display: block; }
-  .right .man .pro {
+  .right .man .man1 {
     width: 80%;
     margin: 0 10%; }
-    .right .man .pro h1 {
+    .right .man .man1 h1 {
       color: #888;
       text-align: left;
       font-size: 28px;
       display: block;
       padding-bottom: 0px; }
-    .right .man .pro b {
+    .right .man .man1 b {
       color: #333;
       opacity: 0.8; }
-    .right .man .pro p {
+    .right .man .man1 p {
       color: #999;
       margin: 0;
       padding: 0 0 30px 0; }
