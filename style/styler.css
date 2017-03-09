@@ -121,6 +121,11 @@ body {
           opacity: 1;
           transform: translateX(0px); }
 
+.left .menu2 {
+  display: block;
+  position: absolute;
+  bottom: 5px; }
+
 .right .proj {
   width: 100%;
   margin: 0 auto;
