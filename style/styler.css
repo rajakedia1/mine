@@ -125,6 +125,11 @@ body {
   display: block;
   position: absolute;
   bottom: 5px; }
+  .left .menu2 a {
+    text-decoration: none; }
+    .left .menu2 a:hover {
+      transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg); }
 
 .right .proj {
   width: 100%;
