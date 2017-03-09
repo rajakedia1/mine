@@ -8,6 +8,7 @@
 <link rel=stylesheet href=css/layout1.css type=text/css>
 <link rel=stylesheet href=style/styler.css type=text/css>
 <link rel=stylesheet href=css/slider.css type=text/css>
+    <link rel=stylesheet href=style/mailbox.css type=text/css>
 <link rel=icon type=image/png href=img/logo.png>
     <link rel=stylesheet href=http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css>
     <!--
@@ -22,7 +23,15 @@
     <script src=js/jquery.js></script>
 <script type=text/javascript src=js/jquery.cycle.all.js></script>
 <script type=text/javascript src=js/slider.js></script>
-<script>$(document).ready(function(){$("a").on("click",function(d){if(this.hash!==""){d.preventDefault();var c=this.hash;$("html, body").animate({scrollTop:$(c).offset().top},900,function(){})}})});$(document).ready(function(){$("#flip").click(function(){$("#loginbox").slideToggle("fast")})});$(document).ready(function(){$("#flip2").click(function(){$("#loginbox").fadeToggle("fast")})});function chooseusername(){var e=document.getElementById("mine").value;var a=document.getElementById("email").value;var c=document.getElementById("sub").value;var d=document.getElementById("msg").value;if(d!=""){var b=new XMLHttpRequest();b.onreadystatechange=function(){if(b.readyState==4&&b.status==200){document.getElementById("state").innerHTML="Mail sent!"}};document.getElementById("state").innerHTML="Sending..";b.open("POST","sendmail.php?ch=1",true);b.setRequestHeader("Content-type","application/x-www-form-urlencoded");b.send("mine="+e+"&email="+a+"&subject="+c+"&msg="+d)}};
+<script>$(document).ready(function(){
+        $("a").on("click",function(d){if(this.hash!==""){
+            d.preventDefault();
+            var c=this.hash;
+            $("html, body").animate({scrollTop:$(c).offset().top},900,function(){})}})});
+    $(document).ready(function(){$("#flip").click(function(){$("#loginbox").slideToggle("fast")})});
+    $(document).ready(function(){$("#flip2").click(function(){$("#loginbox").fadeToggle("fast")})});
+    
+    function chooseusername(){var e=document.getElementById("mine").value;var a=document.getElementById("email").value;var c=document.getElementById("sub").value;var d=document.getElementById("msg").value;if(d!=""){var b=new XMLHttpRequest();b.onreadystatechange=function(){if(b.readyState==4&&b.status==200){document.getElementById("state").innerHTML="Mail sent!"}};document.getElementById("state").innerHTML="Sending..";b.open("POST","sendmail.php?ch=1",true);b.setRequestHeader("Content-type","application/x-www-form-urlencoded");b.send("mine="+e+"&email="+a+"&subject="+c+"&msg="+d)}};
 
 </script>
     
@@ -30,6 +39,22 @@
     
 </head>
 <body>
+    
+    <div id=loginbox>
+        <div class=close id=flip2>X</div>
+        <h1>Mail Form:</h1>
+        <p style=display:none><input type=text name=pickusername id=mine value=rajakedia2222@gmail.com />
+        </p>
+        <p><input type=text name=pickusername id=email placeholder="Enter Your Email" class="msginput"/>
+        </p>
+        <p><input type=text name=subject id=sub placeholder="Enter Subject/Company" class="msginput"/>
+        </p>
+        <p><textarea name=message class=messagearea id=msg placeholder="Enter the mail"></textarea></p>
+        <p class=buttonp>
+        <button id=state onclick=chooseusername()>Send Mail</button>
+        </p>
+    </div>
+    
     
     <div style="position:fixed;z-index:1000;right:30px;bottom:30px;">
         <div ><a href="#home" style="width:50px;height:50px;display:block;background-color:#38a4cc;color:white;text-align:center;line-height:40px;font-size:24px;font-weight:600;border-radius:20px;opacity:0.8;cursor:pointer;text-decoration:none;">&uarr;</a></div>
@@ -77,7 +102,7 @@
                 <div class="main" id="home">
                     <h1>Hello World!</h1>
                     <p>I am Raja Kedia. I am an undergraduate student. I am a web designer and CG Artist with a good hand in various software.</p>
-                    <button class="button1">Send Mail</button>
+                    <button id=flip class="button1">Send Mail</button>
                 
                 </div>
                 <div class="skill" id="tech">
