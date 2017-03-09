@@ -1,0 +1,70 @@
+#loginbox{
+	width: 600px;
+	height: 350px;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	position: fixed;
+	top: calc(50% - 175px);
+	left: calc(50% - 300px);
+	 /* transform: translate(-50%, -50%);  */
+	z-index:1001;
+	display:none;
+    box-shadow: 0px 0px 5px black;
+}
+.close{
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    display: block;
+    color:red;
+    width: 30px;
+    height: 20px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 20px;
+    font-weight: 300;
+    background: white;
+    
+}
+.close:hover{
+    background: #fa1313;
+    color: white;
+    cursor: pointer;
+}
+.msginput{
+	padding: 5px;
+	margin: 10px;
+	font-size: 14px;
+	width: calc(100% - 30px);
+	outline:none;
+}
+.messagearea{
+	padding: 5px;
+	margin: 10px;
+	font-size: 14px;
+	width: calc(100% - 30px);
+	outline:none;
+    
+    height: 100px;
+}
+h1{
+	padding: 0px;
+	margin: 20px 0px 0px 0px;
+	text-align: center;
+	font-weight: normal;
+}
+button{
+	background-color:#43acec;
+	border:none;
+	color:#fff;
+	font-size:16px;
+	padding: 4px;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+	margin:0px auto;
+	width:150px;
+}
+.buttonp{
+	width:150px;
+	margin:0px auto;
+}
