@@ -214,15 +214,16 @@ body {
         float: left;
         width: calc(100% - 180px);
         color: #999;
-        margin: 0;
-        height: 120px;
-        overflow-y: hidden;
-        padding: 10px 0 30px 10px; }
+        margin: 0; }
         .right .devl .dev .title .r1 b {
           font-size: 18px; }
         .right .devl .dev .title .r1 p {
           padding: 0;
           margin: 0; }
+        .right .devl .dev .title .r1 .textx {
+          padding: 10px 0 30px 10px;
+          height: 100px;
+          overflow-y: hidden; }
 
 .button1 {
   border: 2px solid #999;
