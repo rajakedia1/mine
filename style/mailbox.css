@@ -11,6 +11,7 @@
 	display:none;
     box-shadow: 0px 0px 5px black;
 }
+
 .close{
     position: absolute;
     top: 0px;
@@ -68,3 +69,28 @@ button{
 	width:150px;
 	margin:0px auto;
 }
+
+#showbox{
+	width: auto;
+    margin-right: 10%;
+    color: #888;
+	border: 1px solid #ccc;
+	background-color: #fff;
+	position: fixed;
+	top: 50px;
+	left: calc(50% - 300px);
+	 /* transform: translate(-50%, -50%);  */
+	z-index:1001;
+	display:none;
+    box-shadow: 0px 0px 5px black;
+}
+
+<div id=showbox>
+        <div class=close id=click2>X</div>
+        <div id="mytext"> </div>
+        <p class=buttonp>
+        <button id=state onclick=chooseusername()>See all</button>
+        </p>
+    </div>
+
+#
