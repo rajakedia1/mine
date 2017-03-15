@@ -34,9 +34,11 @@
     $(document).ready(function(){$("#flip").click(function(){$("#loginbox").slideToggle("fast")})});
     $(document).ready(function(){$("#flip2").click(function(){$("#loginbox").fadeToggle("fast")})});
     
-    function showboxdet(r){
+    function showboxdet(r,s){
         var str = document.getElementById("text"+r).innerHTML;
         document.getElementById("mytext").innerHTML = str;
+        document.getElementById("titles").innerHTML = s;
+        document.getElementById("state").href = document.getElementById("lk"+r).innerHTML;
         $("#showbox").slideToggle("fast");
     }
     
@@ -66,10 +68,10 @@
     
     <div id=showbox>
         <div class=close id=click2>X</div>
-        <h2> Serene </h2>
+        <h2 id="titles"> </h2>
         <div id="mytext"> </div>
         <p class=buttonp>
-        <button id=state onclick=chooseusername()>See all</button>
+        <a id=state href="http://www.github.io/rajakedia1">More Detail</a>
         </p>
     </div>
     
@@ -174,8 +176,9 @@
                             ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
                             amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
                             odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                                <div id="lk1" style="display:none"> www.rajakedia.com </div>
                             </div>
-                            <div id="click" onclick="showboxdet(1)" class="click">Click me</div>
+                            <div id="click" onclick="showboxdet(1, 'PBee')" class="click">Click me</div>
                         </div>
                         
                     
@@ -209,9 +212,27 @@
                             odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
                             ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
                             amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate. Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate. Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
+                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
                             odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
-                            </div>
-                            <div id="click" onclick="showboxdet(3)" class="click">Click me</div>
+                            </div><div id="lk3" style="display:none"> www.rajakedia.com </div>
+                            <div id="click" onclick="showboxdet(3, 'Parkit')" class="click">Click me</div>
                         </div>
                         
                     
@@ -248,8 +269,8 @@
                             ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
                             amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
                             odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
-                            </div>
-                            <div id="click" onclick="showboxdet(5)" class="click">Click me</div>
+                            </div><div id="lk5" style="display:none"> www.rajakedia.com </div>
+                            <div id="click" onclick="showboxdet(5, 'Foodshades')" class="click">Click me</div>
                         </div>
                         
                     
