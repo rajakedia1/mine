@@ -203,6 +203,7 @@ body
             width: 100%
             display: block
             float: left
+            margin-bottom: 30px
             .col1
                 width: 33%
                 display: block
@@ -231,14 +232,48 @@ body
                         height: auto
                         &:hover
                             border-radius: 50%
+                        
+                
                     
                 label
                     text-align: center
                     font-size: 20px
                     display: block
                     width: 100%
-                
             
+            .col2
+                width: 50%
+                display: block
+                float: left
+                transform: translateX(-50px)
+                overflow-x: hidden
+                opacity: 0
+                transition: all 0.3s ease-in-out
+                
+                
+                &.is-showing2
+                    opacity: 1
+                    transform: translateX(0px)
+                .box
+                    width: 52.8%
+                    
+                    z-index: 1000
+                    float: left
+                    
+                    img
+                        cursor: pointer
+                        border: 3px solid black
+                        transition: all 0.3s ease-in-out
+                        width: calc(100% - 6px)
+                        z-index: 900
+                        height: auto
+                        &:hover
+                            border-radius: 50%
+                label
+                    text-align: center
+                    font-size: 20px
+                    display: block
+                    width: 100%
 .right .devl
     float: left
     width: 100%

@@ -69,6 +69,15 @@ $(window).scroll(function(){
 
                 },150 * (i+1));
             });
+        
+            $('.act .act1 .col2').each(function(i){
+
+                setTimeout(function(){
+
+                    $('.act .act1 .col2').eq(i).addClass('is-showing2');
+
+                },150 * (i+1));
+            });
 
         }
 });
