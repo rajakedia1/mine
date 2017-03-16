@@ -56,6 +56,24 @@ $('.right .skillset').css({
     'padding-top' : ($(window).height()/2) - 260
     
 });
+$(window).scroll(function(){
+    var wScroll = $(this).scrollTop();
+    
+    if(wScroll > $('.act .act1').offset().top - ($(window).height()/1.2)){  // activity
+
+            $('.act .act1 .col1').each(function(i){
+
+                setTimeout(function(){
+
+                    $('.act .act1 .col1').eq(i).addClass('is-showing2');
+
+                },150 * (i+1));
+            });
+
+        }
+});
+
+
 
 $(window).scroll(function(){
     var wScroll = $(this).scrollTop();

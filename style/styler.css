@@ -202,7 +202,13 @@ body {
         width: 30%;
         display: block;
         float: left;
-        margin-right: 3%; }
+        margin-right: 3%;
+        transform: translateX(-20px);
+        transition: all 0.3s ease-in-out;
+        cursor: pointer; }
+        .right .act .act1 .row1 .col1.is-showing2 {
+          opacity: 1;
+          transform: translateX(0px); }
         .right .act .act1 .row1 .col1 img {
           width: 100%;
           border-radius: 50%;
