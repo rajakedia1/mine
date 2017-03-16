@@ -8,28 +8,28 @@ $('.right .skill').css({
 });
 $('.right .main').css({
             
-    'height' : $(window).height(),
+    'height' : $(window).height()
     
 });
 $('.right .devl').css({
             
-    'min-height' : $(window).height(),
+    'min-height' : $(window).height()
     
 });
 $('.right .proj').css({
             
-    'min-height' : $(window).height(),
+    'min-height' : $(window).height()
     
 });
 $('.right .man').css({
             
-    'min-height' : $(window).height(),
+    'min-height' : $(window).height()
     
 });
 
 $('.right .act').css({
             
-    'min-height' : $(window).height(),
+    'min-height' : $(window).height()
     
 });
 
@@ -80,6 +80,59 @@ $(window).scroll(function(){
             });
 
         }
+        
+    
+    var bcol = 'red'
+    var acol = 'white'
+    
+    var ts =  $('.right #tech').offset().top - $(window).height();
+    var ps =  $('.right #proj').offset().top- $(window).height();
+    var ds =  $('.right #devx').offset().top-$(window).height();
+    var ms =  $('.right #manage').offset().top-$(window).height();
+    var as =  $('.right #activity').offset().top-$(window).height();
+    
+    if(wScroll <ts){  // activity
+        $('.left .bar a#l1').css({'color' : acol});
+        $('.left .bar a#l2').css({'color' : acol});
+        $('.left .bar a#l3').css({'color' : acol});
+        $('.left .bar a#l4').css({'color' : acol});
+        $('.left .bar a#l5').css({'color' : acol});
+    }else
+    if(wScroll > ts && wScroll < ps){  // activity
+        $('.left .bar a#l1').css({'color' : bcol});
+        $('.left .bar a#l2').css({'color' : acol});
+        $('.left .bar a#l3').css({'color' : acol});
+        $('.left .bar a#l4').css({'color' : acol});
+        $('.left .bar a#l5').css({'color' : acol});
+    }else
+    if(wScroll > ps && wScroll < ds){  // activity
+        $('.left .bar a#l1').css({'color' : acol});
+        $('.left .bar a#l2').css({'color' : bcol});
+        $('.left .bar a#l3').css({'color' : acol});
+        $('.left .bar a#l4').css({'color' : acol});
+        $('.left .bar a#l5').css({'color' : acol});
+    }else
+    if(wScroll > ds && wScroll < ms){  // activity
+        $('.left .bar a#l1').css({'color' : acol});
+        $('.left .bar a#l2').css({'color' : acol});
+        $('.left .bar a#l3').css({'color' : bcol});
+        $('.left .bar a#l4').css({'color' : acol});
+        $('.left .bar a#l5').css({'color' : acol});
+    }else
+    if(wScroll > ms && wScroll < as){  // activity
+        $('.left .bar a#l1').css({'color' : acol});
+        $('.left .bar a#l2').css({'color' : acol});
+        $('.left .bar a#l3').css({'color' : acol});
+        $('.left .bar a#l4').css({'color' : bcol});
+        $('.left .bar a#l5').css({'color' : acol});
+    }else
+    if(wScroll > as){  // activity
+        $('.left .bar a#l1').css({'color' : acol});
+        $('.left .bar a#l2').css({'color' : acol});
+        $('.left .bar a#l3').css({'color' : acol});
+        $('.left .bar a#l4').css({'color' : acol});
+        $('.left .bar a#l5').css({'color' : bcol});
+    }
 });
 
 
