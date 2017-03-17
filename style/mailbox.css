@@ -70,6 +70,10 @@ button{
 	width:150px;
 	margin:0px auto;
 }
+.buttonq{
+	width:250px;
+	margin:0px auto 10px;
+}
 
 #showbox{
 	width: auto;
