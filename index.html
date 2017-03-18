@@ -8,27 +8,28 @@
 <link rel=stylesheet href=css/layout1.css type=text/css>
 <link rel=stylesheet href=style/styler.css type=text/css>
 <link rel=stylesheet href=css/slider.css type=text/css>
-    <link rel=stylesheet href=style/mailbox.css type=text/css>
+<link rel=stylesheet href=style/mailbox.css type=text/css>
 <link rel=icon type=image/png href=img/logo.png>
-    <link rel=stylesheet href=http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css>
-    <!--
 <link rel=stylesheet href=http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css>
-
-
-    
-
-    
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!--
+    <link rel=stylesheet href=http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 -->
-    <script src=js/jquery.js></script>
+<script src=js/jquery.js></script>
 <script type=text/javascript src=js/jquery.cycle.all.js></script>
 <script type=text/javascript src=js/slider.js></script>
-<script>$(document).ready(function(){
-        $("a").on("click",function(d){if(this.hash!==""){
-            d.preventDefault();
-            var c=this.hash;
-            $("html, body").animate({scrollTop:$(c).offset().top},900,function(){})}})});
+<script>
+    $(document).ready(function(){
+        $("a").on("click",function(d){
+            if(this.hash!==""){
+                d.preventDefault();
+                var c=this.hash;
+                $("html, body").animate({scrollTop:$(c).offset().top},900,function(){})
+            }
+        })
+    });
     //$(document).ready(function(){$("#click").click(function(){$("#showbox").slideToggle("fast")})});
+   
     $(document).ready(function(){$("#click2").click(function(){$("#showbox").fadeToggle("fast")})});
     
     $(document).ready(function(){$("#flip").click(function(){$("#loginbox").slideToggle("fast")})});
@@ -42,13 +43,28 @@
         $("#showbox").slideToggle("fast");
     }
     
-    function chooseusername(){var e=document.getElementById("mine").value;var a=document.getElementById("email").value;var c=document.getElementById("sub").value;var d=document.getElementById("msg").value;if(d!=""){var b=new XMLHttpRequest();b.onreadystatechange=function(){if(b.readyState==4&&b.status==200){document.getElementById("state").innerHTML="Mail sent!"}};document.getElementById("state").innerHTML="Sending..";b.open("POST","sendmail.php?ch=1",true);b.setRequestHeader("Content-type","application/x-www-form-urlencoded");b.send("mine="+e+"&email="+a+"&subject="+c+"&msg="+d)}};
+    function chooseusername(){
+        var e=document.getElementById("mine").value;
+        var a=document.getElementById("email").value;
+        var c=document.getElementById("sub").value;
+        var d=document.getElementById("msg").value;
+        if(d!=""){var b=new XMLHttpRequest();
+                  b.onreadystatechange=function(){
+                      if(b.readyState==4&&b.status==200){
+                          document.getElementById("state").innerHTML="Mail sent!";
+                      }
+                  };
+                  document.getElementById("state").innerHTML="Sending..";
+                  b.open("POST","sendmail.php?ch=1",true);
+                  b.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+                  b.send("mine="+e+"&email="+a+"&subject="+c+"&msg="+d);
+                 }
+    }
 
 </script>
     
-
-    
 </head>
+    
 <body>
     
     <div id=loginbox>
@@ -75,16 +91,21 @@
         </p>
     </div>
     
-    <div style="position:fixed;z-index:1000;right:30px;bottom:30px;">
-        <div ><a href="#home" style="width:50px;height:50px;display:block;background-color:#38a4cc;color:white;text-align:center;line-height:40px;font-size:24px;font-weight:600;border-radius:20px;opacity:0.8;cursor:pointer;text-decoration:none;">&uarr;</a></div>
+    <div style="position:fixed;z-index:1000;right:30px;bottom:30px;"> <!-- Up arrow -->
+        <div >
+            <a href="#home" style="width:50px;height:50px;display:block;background-color:#38a4cc;color:white;text-align:center;line-height:40px;font-size:24px;font-weight:600;border-radius:20px;opacity:0.8;cursor:pointer;text-decoration:none;">&uarr;</a>
+        </div>
     </div>
+    
     <div class="wrapper">
         <div class="left">
+            
             <div class="title">
                 <img src="img3/1234.jpg">
                 <h2>Raja Kedia</h2>
                 <h3>Software Developer, CG Artist and Musician</h3>
             </div>
+            
             <div class="bar">
                 <ul>
                     <li><a id="l1" href="#tech">Technical Skills</a></li>
@@ -95,6 +116,7 @@
                     <li><a href="https://www.artstation.com/contests" target="0">Art Works</a></li>
                 </ul>
             </div>
+            
             <div style="text-align: center;" class=menu2>
                 <a href=https://facebook.com/RajaKedia style="margin-right:30px"><span class="fa-stack fa-lg">
                 <i class="fa fa-circle fa-stack-2x" style=color:#345AA9></i>
@@ -117,49 +139,58 @@
                 </span>
                 </a>
             </div>
+            
         </div>
+        
         <div class="right">
             <section>
+                
                 <div class="main" id="home">
                     <h1>Hello World!</h1>
                     <p>I am Raja Kedia. I am an undergraduate student. I am a web designer and CG Artist with a good hand in various software.</p>
                     <button id=flip class="button1">Send Mail</button>
                 
                 </div>
+                
                 <div class="skill" id="tech">
                     <div class=skillset>
                         <b>Techinal Skills</b>
                         <ul>
-                        <li><b>Languages: </b> C++, C, Python, Java, Haskell, Scala</li>
-                        <li><b>Web Languages: </b> HTML5, CSS3, Sass, JavaScript, Ajax, PHP</li>
-                        <li><b>Python Modules: </b> NumPy, SciPy, Scikit-learn, Tensorflow</li>
-                        <li><b>Database: </b> MySQl, MongoDB, NoSQL</li>
-                        <li><b>Graphics: </b> Blender, Sculptris, GIMP2, Inkscape</li>
-                        <li><b>Framework: </b> JQuery, Node.js, CodeIgniter, Flask, AngularJS, ReactJS</li>
-                        <li><b>Mobile App: </b> Android Studio, Ionic Framework</li>
-                        <li><b>Other Web Tools: </b> Grunt, Git, Github, Mercurial, Jekyll</li>
-                        <li><b>Software: </b> Dreamweaver, Photoshop, Illustrator, SBT</li>
-                        <li><b>Simulation Software: </b> MATLAB and Simulink, PSpice</li>
-                        <li><b>Microcontrollers: </b> 8085, 8086, 8255, ARM, Raspberry PI,Arduino, Beagle Bone</li>
-                        <li><b>OS: </b> Windows, Linux, Ubuntu</li>
+                            <li><b>Languages: </b> C++, C, Python, Java, Haskell, Scala</li>
+                            <li><b>Web Languages: </b> HTML5, CSS3, Sass, JavaScript, Ajax, PHP</li>
+                            <li><b>Python Modules: </b> NumPy, SciPy, Scikit-learn, Tensorflow</li>
+                            <li><b>Database: </b> MySQl, MongoDB, NoSQL</li>
+                            <li><b>Graphics: </b> Blender, Sculptris, GIMP2, Inkscape</li>
+                            <li><b>Framework: </b> JQuery, Node.js, CodeIgniter, Flask, AngularJS, ReactJS</li>
+                            <li><b>Mobile App: </b> Android Studio, Ionic Framework</li>
+                            <li><b>Other Web Tools: </b> Grunt, Git, Github, Mercurial, Jekyll</li>
+                            <li><b>Software: </b> Dreamweaver, Photoshop, Illustrator, SBT</li>
+                            <li><b>Simulation Software: </b> MATLAB and Simulink, PSpice</li>
+                            <li><b>Microcontrollers: </b> 8085, 8086, 8255, ARM, Raspberry PI,Arduino, Beagle Bone</li>
+                            <li><b>OS: </b> Windows, Linux, Ubuntu</li>
                         </ul>
-                        </div>
+                    </div>
                 </div>
+                
                 <div class="proj" id="proj">
-                <div class=pro>
-                    <h1>Major Projects Undertaken</h1>
-                    <hr><br>
-                    <p><b style=font-size:20px;padding-bottom:0px;display:block>Route Optimization algorithms for Electric vehicles</b><br>
-                    <b>Project guide:</b> <i>Prof. B. Krishna Naick, Dept. of Electrical Engg, IIT(ISM) Dhanbad<br></i>
-                    <b>Route Optimization (RO)</b> is an important feature of <b>Electric Vehicles (EVs)</b> navigation System. The Solution aims to minimize the length of the path and meet constraints on travelling time, time delay due to traffic signals, recharging time and recharging cost. The problem is based on the <b>Travelling Salesman Problem (TSP)</b> with different constraints. A Java code is implemented to solve the TSP with single Salesman using Greedy Algorithm with different Possibilities to increase efficiency of the code.
-                    </p>
-                    <hr>
-                    <p><b style=font-size:20px;padding-bottom:0px;display:block>Variable Amplitude and Variable Frequency control Voltage Source </b><br>
-                    <b>Project guide:</b> <i>Prof. Prof Arijit Baral, Dept. of Electrical Engg, IIT(ISM) Dhanbad<br></i>
-                    The motive of the project is to get an output voltage whose amplitude decreases when frequency is increased.
-                    </p>
+                    <div class=pro>
+                        <h1>Major Projects Undertaken</h1>
+                        <hr><br>
+                        <p>
+                            <b style=font-size:20px;padding-bottom:0px;display:block>Route Optimization algorithms for Electric vehicles</b><br>
+                            <b>Project guide:</b> <i>Prof. B. Krishna Naick, Dept. of Electrical Engg, IIT(ISM) Dhanbad<br></i>
+                            <b>Route Optimization (RO)</b> is an important feature of <b>Electric Vehicles (EVs)</b> navigation System. The Solution aims to minimize the length of the path and meet constraints on travelling time, time delay due to traffic signals, recharging time and recharging cost. The problem is based on the <b>Travelling Salesman Problem (TSP)</b> with different constraints. A Java code is implemented to solve the TSP with single Salesman using Greedy Algorithm with different Possibilities to increase efficiency of the code.
+                        </p>
+                        <hr>
+                        
+                        <p>
+                            <b style=font-size:20px;padding-bottom:0px;display:block>Variable Amplitude and Variable Frequency control Voltage Source </b><br>
+                            <b>Project guide:</b> <i>Prof. Prof Arijit Baral, Dept. of Electrical Engg, IIT(ISM) Dhanbad<br></i>
+                            The motive of the project is to get an output voltage whose amplitude decreases when frequency is increased.
+                        </p>
+                    </div>
                 </div>
-                </div>
+                
                 <div class="devl" id="devx">
                 <div class="dev">
                     <h1>Developed Applications</h1>
@@ -168,17 +199,18 @@
                         <div class="r1">
                             <b>PBee</b>
                             <div class="textx">
-                            <p id="text1">PBee is an initiative taken to solve the problem of Parking in Cities. This easy to handle app can solve the issue of not getting an empty parking space easily even after the concept of Multi Level parking is introduced. The matter is, people don’t get to know whether there is any vacant space or not in the parking lots they are approaching. PBee can easily address to this situation and will give unexpected results.<br><br>
-                            <b>Operation:<br>
-                                <br>
-                            For User: </b>  
-                            PBee app will be provided to user. Their location will be automatically detected by the app and accordingly the nearest parking station status will be shown. The status is imported from the server which is updated from parking lot.<br>
-                            <b> Parking Lot: </b>
-                            Here, Backend version of PBee is installed. It captures image of parking lot in a given interval, processes it and detect number of empty lots and then it update the server in real time.
-                                <br>
-                                <b>Tech Used: </b>JavaScript, Webcam.js, CanvasJs, GoogleMap API, GeoLocation GMap API, Php, Git, CSS, HTML
-                                </p>
-                                <div id="lk1" style="display:none">https://github.com/rajakedia1/PBee</div>
+                              <p id="text1">
+                                  PBee is an initiative taken to solve the problem of Parking in Cities. This easy to handle app can solve the issue of not getting an empty parking space easily even after the concept of Multi Level parking is introduced. The matter is, people don’t get to know whether there is any vacant space or not in the parking lots they are approaching. PBee can easily address to this situation and will give unexpected results.<br><br>
+                                  <b>Operation:<br>
+                                  <br>
+                                  For User: </b>  
+                                  PBee app will be provided to user. Their location will be automatically detected by the app and accordingly the nearest parking station status will be shown. The status is imported from the server which is updated from parking lot.<br>
+                                  <b> Parking Lot: </b>
+                                  Here, Backend version of PBee is installed. It captures image of parking lot in a given interval, processes it and detect number of empty lots and then it update the server in real time.
+                                  <br>
+                                  <b>Tech Used: </b>JavaScript, Webcam.js, CanvasJs, GoogleMap API, GeoLocation GMap API, Php, Git, CSS, HTML
+                              </p>
+                            <div id="lk1" style="display:none">https://github.com/rajakedia1/PBee</div>
                             </div>
                             <div id="click" onclick="showboxdet(1, 'PBee')" class="click"> See More </div>
                         </div>
@@ -215,34 +247,10 @@
                         <div class="r1">
                             <b>Serene</b>
                             <div class="textx">
-                            <p id="text3">test 3 Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate. Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate. Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-                            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-                            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-                            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.</p>
+                            <p id="text3">A dynamic Social Networking Website with features like add friends, real time chat, upload photo, update status, add a post in someone’s profile, tag a user with ‘@username’ in a post, Sign in, Signup, Validation, as well as responsive design with lot of other features. 
+The website is currently in progress and lot of other thing is to be added. 
+Tech in use: Php, HTML5, CSS, Sass, Ajax, Jquery, JavaScript, MySQL.
+</p>
                             </div><div id="lk3" style="display:none"> www.rajakedia.com </div>
                             <div id="click" onclick="showboxdet(3, 'Parkit')" class="click">Click me</div>
                         </div>
