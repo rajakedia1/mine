@@ -35,7 +35,7 @@ $('.right .act').css({
 
 $('.right .main h1').css({
             
-    'padding-top' : ($(window).height()/2) - 130
+    'padding-top' : ($(window).height()/2) - 250
     
 });
 
