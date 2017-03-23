@@ -93,35 +93,35 @@ $(window).scroll(function(){
     var ms =  $('.right #manage').offset().top-$(window).height();
     var as =  $('.right #activity').offset().top-$(window).height();
     
-    if(wScroll <ts){  // activity
+    if(wScroll <=ts){  // activity
         $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
     }else
-    if(wScroll > ts && wScroll < ps){  // activity
+    if(wScroll > ts && wScroll <= ps){  // tech
         $('.left .bar a#l1').css({'color' : bcol, 'font-size' : af});
         $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
     }else
-    if(wScroll > ps && wScroll < ds){  // activity
+    if(wScroll > ps && wScroll <= ds){  // pro
         $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l2').css({'color' : bcol, 'font-size' : af});
         $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
     }else
-    if(wScroll > ds && wScroll < ms){  // activity
+    if(wScroll > ds && wScroll <= ms){  // dev
         $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l3').css({'color' : bcol, 'font-size' : af});
         $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
     }else
-    if(wScroll > ms && wScroll < as){  // activity
+    if(wScroll > ms && wScroll <= as){  // activity
         $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});

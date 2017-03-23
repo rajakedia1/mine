@@ -262,6 +262,7 @@ body {
 .right .devl {
   float: left;
   width: 100%;
+  display: block;
   margin: 0 auto; }
   .right .devl .dev {
     width: 80%;
