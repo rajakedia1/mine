@@ -82,8 +82,10 @@ $(window).scroll(function(){
         }
         
     
-    var bcol = 'red'
+    var bcol = '#333'
     var acol = 'white'
+    var af = 25
+    var bf = 18
     
     var ts =  $('.right #tech').offset().top - $(window).height();
     var ps =  $('.right #proj').offset().top- $(window).height();
@@ -92,46 +94,46 @@ $(window).scroll(function(){
     var as =  $('.right #activity').offset().top-$(window).height();
     
     if(wScroll <ts){  // activity
-        $('.left .bar a#l1').css({'color' : acol});
-        $('.left .bar a#l2').css({'color' : acol});
-        $('.left .bar a#l3').css({'color' : acol});
-        $('.left .bar a#l4').css({'color' : acol});
-        $('.left .bar a#l5').css({'color' : acol});
+        $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
     }else
     if(wScroll > ts && wScroll < ps){  // activity
-        $('.left .bar a#l1').css({'color' : bcol});
-        $('.left .bar a#l2').css({'color' : acol});
-        $('.left .bar a#l3').css({'color' : acol});
-        $('.left .bar a#l4').css({'color' : acol});
-        $('.left .bar a#l5').css({'color' : acol});
+        $('.left .bar a#l1').css({'color' : bcol, 'font-size' : af});
+        $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
     }else
     if(wScroll > ps && wScroll < ds){  // activity
-        $('.left .bar a#l1').css({'color' : acol});
-        $('.left .bar a#l2').css({'color' : bcol});
-        $('.left .bar a#l3').css({'color' : acol});
-        $('.left .bar a#l4').css({'color' : acol});
-        $('.left .bar a#l5').css({'color' : acol});
+        $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l2').css({'color' : bcol, 'font-size' : af});
+        $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
     }else
     if(wScroll > ds && wScroll < ms){  // activity
-        $('.left .bar a#l1').css({'color' : acol});
-        $('.left .bar a#l2').css({'color' : acol});
-        $('.left .bar a#l3').css({'color' : bcol});
-        $('.left .bar a#l4').css({'color' : acol});
-        $('.left .bar a#l5').css({'color' : acol});
+        $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l3').css({'color' : bcol, 'font-size' : af});
+        $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
     }else
     if(wScroll > ms && wScroll < as){  // activity
-        $('.left .bar a#l1').css({'color' : acol});
-        $('.left .bar a#l2').css({'color' : acol});
-        $('.left .bar a#l3').css({'color' : acol});
-        $('.left .bar a#l4').css({'color' : bcol});
-        $('.left .bar a#l5').css({'color' : acol});
+        $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l4').css({'color' : bcol, 'font-size' : af});
+        $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
     }else
     if(wScroll > as){  // activity
-        $('.left .bar a#l1').css({'color' : acol});
-        $('.left .bar a#l2').css({'color' : acol});
-        $('.left .bar a#l3').css({'color' : acol});
-        $('.left .bar a#l4').css({'color' : acol});
-        $('.left .bar a#l5').css({'color' : bcol});
+        $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l5').css({'color' : bcol, 'font-size' : af});
     }
 });
 
