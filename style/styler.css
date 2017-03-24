@@ -16,7 +16,7 @@ body {
     float: left;
     display: block;
     position: fixed;
-    background: teal; }
+    background: url("../img3/dark-BG.jpg"); }
     .wrapper .left .title {
       text-align: right;
       margin-right: 40px; }
@@ -86,7 +86,7 @@ body {
   float: left;
   width: 100%;
   margin: 0 auto;
-  background-image: url(../img3/tech.jpg);
+  background-image: url(../img3/back.jpg);
   background-size: 100% 100%;
   background-position: top center;
   background-repeat: no-repeat;
