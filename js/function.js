@@ -83,7 +83,7 @@ $(window).scroll(function(){
     }
     
 });
-//this is fine
+//It can be edited
 
 
 
