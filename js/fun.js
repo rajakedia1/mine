@@ -82,7 +82,7 @@ $(window).scroll(function(){
         }
         
     
-    var bcol = '#333'
+    var bcol = '#ff0000'
     var acol = 'white'
     var af = 25
     var bf = 18
@@ -92,6 +92,7 @@ $(window).scroll(function(){
     var ds =  $('.right #devx').offset().top-$(window).height();
     var ms =  $('.right #manage').offset().top-$(window).height();
     var as =  $('.right #activity').offset().top-$(window).height();
+    var cs =  $('.right #course').offset().top-$(window).height();
     
     if(wScroll <=ts){  // activity
         $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
@@ -99,6 +100,7 @@ $(window).scroll(function(){
         $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l6').css({'color' : acol, 'font-size' : bf});
     }else
     if(wScroll > ts && wScroll <= ps){  // tech
         $('.left .bar a#l1').css({'color' : bcol, 'font-size' : af});
@@ -106,6 +108,7 @@ $(window).scroll(function(){
         $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l6').css({'color' : acol, 'font-size' : bf});
     }else
     if(wScroll > ps && wScroll <= ds){  // pro
         $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
@@ -113,6 +116,7 @@ $(window).scroll(function(){
         $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l6').css({'color' : acol, 'font-size' : bf});
     }else
     if(wScroll > ds && wScroll <= ms){  // dev
         $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
@@ -120,20 +124,32 @@ $(window).scroll(function(){
         $('.left .bar a#l3').css({'color' : bcol, 'font-size' : af});
         $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l6').css({'color' : acol, 'font-size' : bf});
     }else
-    if(wScroll > ms && wScroll <= as){  // activity
+    if(wScroll > ms && wScroll <= as){  // manage
         $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l4').css({'color' : bcol, 'font-size' : af});
         $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l6').css({'color' : acol, 'font-size' : bf});
     }else
-    if(wScroll > as){  // activity
+    if(wScroll > as && wScroll <= cs){  // activity
         $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
         $('.left .bar a#l5').css({'color' : bcol, 'font-size' : af});
+        $('.left .bar a#l6').css({'color' : acol, 'font-size' : bf});
+    }
+    else
+    if(wScroll > cs){  // cou
+        $('.left .bar a#l1').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l2').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l3').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l4').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l5').css({'color' : acol, 'font-size' : bf});
+        $('.left .bar a#l6').css({'color' : bcol, 'font-size' : af});
     }
 });
 
