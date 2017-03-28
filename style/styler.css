@@ -337,4 +337,20 @@ body {
     cursor: pointer;
     transition: all 0.2s ease-in-out; }
 
+.right .artwork {
+  width: 100%;
+  margin: 0 auto;
+  float: left;
+  display: block; }
+  .right .artwork a {
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 100px;
+    color: #ccc;
+    transition: all 0.1s ease-in-out; }
+    .right .artwork a:hover {
+      color: black; }
+
 /*# sourceMappingURL=styler.css.map */
